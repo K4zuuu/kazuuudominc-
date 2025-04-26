@@ -1,0 +1,130 @@
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    margin: 0;
+    /* Menghilangkan margin default */
+    padding: 0;
+    /* Menghilangkan padding default */
+    height: 100vh;
+    /* Mengatur tinggi body menjadi 100% dari viewport */
+    background-image: url('background.jpg');
+    /* Ganti dengan nama file gambar Anda */
+    background-size: cover;
+    /* Mengatur gambar agar menutupi seluruh area */
+    background-position: center;
+    /* Mengatur posisi gambar di tengah */
+    background-repeat: no-repeat;
+    /* Menghindari pengulangan gambar */
+}
+
+.content {
+    color: white;
+    /* Warna teks putih */
+    text-align: center;
+    /* Mengatur teks agar berada di tengah */
+    padding: 20px;
+    /* Menambahkan padding */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Latar belakang semi-transparan untuk konten */
+    border-radius: 10px;
+    /* Mengatur sudut konten menjadi bulat */
+    max-width: 600px;
+    /* Mengatur lebar maksimum konten */
+    margin: auto;
+    /* Mengatur margin otomatis untuk memusatkan konten */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    border-radius: 50%;
+    margin-top: 2%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    height: 2.75rem;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    margin: 0.5rem 0;
+    border-radius: 15px;
+    background: #0d060c;
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    filter: drop-shadow(0px 5px 1px rgba(0, 0, 0, 0.3));
+}
+
+.link {
+    text-decoration: none;
+    /* Menghilangkan garis bawah */
+    color: #f9f9f9;
+    /* Warna teks */
+    font-size: 24px;
+    /* Ukuran font */
+    padding: 10px 20px;
+    /* Padding */
+    border: 2px solid #d0d0d0;
+    /* Border */
+    border-radius: 5px;
+    /* Sudut bulat */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transisi */
+}
+
+
+/* Efek saat hover */
+
+.link:hover {
+    background-color: #eff4ef;
+    /* Warna latar belakang saat hover */
+    color: white;
+    /* Warna teks saat hover */
+}
+
+.greetings {
+    color: #ffffff;
+    /* Warna hijau untuk teks h1 */
+    font-size: 48px;
+    /* Ukuran font */
+    text-align: center;
+    /* Mengatur teks agar berada di tengah */
+}
+
+.about {
+    color: #ffffff;
+    /* Warna oranye untuk teks p */
+    font-size: 24px;
+    /* Ukuran font */
+    text-align: center;
+    /* Mengatur teks agar berada di tengah */
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('MyFont.woff') format('woff');
+    /* Ganti dengan path ke file font Anda */
+}
+
+body {
+    font-family: 'MyFont', sans-serif;
+    /* Menggunakan font
